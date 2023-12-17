@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        @import "compass/css3";
+        @import url(https://fonts.googleapis.com/css?family=Finger+Paint);
+        body {
+          background: black;
+  
+          background-image: url("https://images.pexels.com/photos/6165336/pexels-photo-6165336.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1");
+          background-size: cover;
+          overflow: hidden;
+          font: 5vw/100vh "Finger Paint";
+          text-align: center;
+          color: transparent;
+          backface-visibility: hidden;
+        }
+        span {
+          display: inline-block;
+          text-shadow: 0 0 0 whitesmoke;
+          animation: smoky 5s 3s both;
+        }
+        span:nth-child(even) {
+          animation-name: smoky-mirror;
+        }
+        @keyframes smoky {
+          60% {
+            text-shadow: 0 0 40px whitesmoke;
+          }
+          to {
+            transform: translate3d(15rem, -8rem, 0) rotate(-40deg) skewX(70deg)
+              scale(1.5);
+            text-shadow: 0 0 20px whitesmoke;
+            opacity: 0;
+          }
+        }
+        @keyframes smoky-mirror {
+          60% {
+            text-shadow: 0 0 40px whitesmoke;
+          }
+          to {
+            transform: translate3d(18rem, -8rem, 0) rotate(-40deg) skewX(-70deg)
+              scale(2);
+            text-shadow: 0 0 20px whitesmoke;
+            opacity: 0;
+          }
+        }
+      </style>
+    </head>
+    <body>
+      <span>Y</span><span>O</span><span>U</span><span>&nbsp;</span><span>A</span
+      ><span>R</span><span>E</span>&nbsp;</span
+      ><span>Y</span><span>O</span><span>U</span><span>R &nbsp;</span
+      ><span>C</span><span>H</span><span>O</span><span>I</span><span>C</span
+      ><span>E</span><span>S</span>
+    </body>
+  </html>
