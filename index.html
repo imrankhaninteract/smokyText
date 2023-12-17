@@ -5,27 +5,33 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <style>
+        /* Importing CSS libraries and setting styles for the body */
         @import "compass/css3";
         @import url(https://fonts.googleapis.com/css?family=Finger+Paint);
         body {
+          /* Setting background styles */
           background: black;
-  
           background-image: url("https://images.pexels.com/photos/6165336/pexels-photo-6165336.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1");
           background-size: cover;
           overflow: hidden;
+          /* Setting font styles */
           font: 5vw/100vh "Finger Paint";
           text-align: center;
           color: transparent;
           backface-visibility: hidden;
         }
+        /* Styling for individual span elements */
         span {
           display: inline-block;
           text-shadow: 0 0 0 whitesmoke;
+          /* Configuring animation settings */
           animation: smoky 5s 3s both;
         }
+        /* Additional style for even span elements */
         span:nth-child(even) {
           animation-name: smoky-mirror;
         }
+        /* Keyframes for the 'smoky' animation */
         @keyframes smoky {
           60% {
             text-shadow: 0 0 40px whitesmoke;
@@ -37,6 +43,7 @@
             opacity: 0;
           }
         }
+        /* Keyframes for the 'smoky-mirror' animation */
         @keyframes smoky-mirror {
           60% {
             text-shadow: 0 0 40px whitesmoke;
@@ -48,13 +55,14 @@
             opacity: 0;
           }
         }
-      </style>
-    </head>
-    <body>
-      <span>Y</span><span>O</span><span>U</span><span>&nbsp;</span><span>A</span
-      ><span>R</span><span>E</span>&nbsp;</span
-      ><span>Y</span><span>O</span><span>U</span><span>R &nbsp;</span
-      ><span>C</span><span>H</span><span>O</span><span>I</span><span>C</span
-      ><span>E</span><span>S</span>
-    </body>
-  </html>
+    </style>
+</head>
+<body>
+    <!-- Text created using multiple span elements -->
+    <span>Y</span><span>O</span><span>U</span><span>&nbsp;</span><span>A</span
+    ><span>R</span><span>E</span>&nbsp;</span
+    ><span>Y</span><span>O</span><span>U</span><span>R &nbsp;</span
+    ><span>C</span><span>H</span><span>O</span><span>I</span><span>C</span
+    ><span>E</span><span>S</span>
+</body>
+</html>
