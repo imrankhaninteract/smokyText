@@ -1,0 +1,11 @@
+How To Create Smoky Text Effects with CSS
+
+To create an HTML document, initiate a new file with an html extension. Utilize a text editor to input the subsequent details.
+
+Firstly, specify this as an HTML5 document with English as the language. Construct the initial HTML section, followed by the head segment. Within the head, specify character encoding, set the viewport for responsiveness, assign a document title, and embed CSS styles using the style tags.
+
+In the style section, introduce CSS libraries and define styles for the body without symbols. For the body, configure a black background, insert a background image via its URL, adjust the background size, conceal overflow content, set font properties, centrally align text, and make text color transparent. For individual span elements, style them as inline-blocks, apply text shadows, and add animations using keyframes for smoky and smoky-mirror effects.
+
+After the style section, proceed to the body section. Employ multiple span elements to encompass the letters forming the phrase YOU ARE YOUR CHOICES.
+
+Save the document with the html extension and open it in a web browser to view the CSS generated animated text effect. 
